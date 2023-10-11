@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <!-- Add your CSS links here -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Lato:wght@300&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="lab.css">
+<style>
+  
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  bg-dark ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img  src="/images/Ben_10_logo.svg.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link " href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">About us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="games.html">Games</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="profile.html">Profile</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="episodes.html">Stories/Episodes</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="fan-community.html">Fan community</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="fan-art.html">Fan art</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="merchandise.html">Merchandise</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="profile.html">Quiz</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="profile-bg">
+<section class="profile">
+    <div class=" text-center py-5 bg-dark">
+        <h1>Welcome to Your User Profile</h1>
+        <p class="lead">Manage your profile information and stay connected.</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg  ">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#edit-profile">Edit Profile</a></li>
+            <li class="nav-item"><a class="nav-link" id="logout" href="#logout">Logout</a></li>
+        </ul>
+    </nav>
+    </section>
+
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                Profile Information
+              </div>
+              <div class="card-body text-white bg-dark">
+                <img src="el.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-3" id="profile-image">
+                <p><strong>Name:</strong> <span id="name">George Clinton</span></p>
+                <p><strong>Email:</strong> <span id="email">Georgeclint56@gmail.com</span></p>
+                <p><strong>Location:</strong> <span id="location">Lagos,Nigeria</span></p>
+                <p><strong>About Me:</strong></p>
+                <p id="about-me">Man of Stel</p>
+                <button class="btn btn-success" id="edit-profile">Edit Profile</button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card" id="edit-form" style="display: none;">
+              <div class="card-header">
+                Edit Profile
+              </div>
+              <div class="card-body bg-dark text-white">
+                <form id="profile-edit-form">
+                  <div class="form-group">
+                    <label for="new-name">New Name</label>
+                    <input type="text" class="form-control" id="new-name" placeholder="New Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-email">New Email</label>
+                    <input type="email" class="form-control" id="new-email" placeholder="New Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-location">New Location</label>
+                    <input type="text" class="form-control" id="new-location" placeholder="New Location">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-about-me">About Me</label>
+                    <textarea class="form-control" id="new-about-me" rows="4" placeholder="Tell us about yourself"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="new-profile-image">Upload Profile Picture</label>
+                    <input type="file" class="form-control-file" id="new-profile-image">
+                  </div>
+                  <button type="button" class="btn btn-success" id="save-changes">Save Changes</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
+      
+
+<!-- Footer -->
+<section id="last-section">
+  <footer class="footer">
+      <div class="container ">
+          <div class="row foot">
+              <div class="col-md-4">
+                  <!-- Logo -->
+                  <img src="/images/56.png" alt="Ben 10 Logo" width="100" height="100">
+              </div>
+              <div class="col-md-4">
+                  <!-- Navigation Links -->
+                  <ul class="footer-links">
+                      <li><a href="home.html">Homepage</a></li>
+                      <li><a href="games.html">Games</a></li>
+                      <li><a href="episodes.html">Episodes</a></li>
+                      <li><a href="quiz.html">Quizzes</a></li>
+                      <li><a href="merchandise.html">Merchandise</a></li>
+                      <li><a href="fan-community.html">Fan Community</a></li>
+                      <li><a href="fan-art.html">My Collections</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <!-- Social Media Links -->
+                  <ul class="social-links">
+                      <li><a href="#"><img src="/images/fb.png"></a>facebook</li>
+                      <li><a href="#"><img src="/images/tw.png" alt="Twitter"></a>Twitter</li>
+                      <li><a href="#"><img src="/images/ig.png" alt="Instagram"></a>instagram</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+</section>
+
+      <script>
+        // JavaScript code goes here
+      
+      
+        // JavaScript for Profile Editing Section
+      const editFormDiv = document.getElementById('edit-form');
+      const editProfileButton = document.getElementById('edit-profile');
+      const saveChangesButton = document.getElementById('save-changes');
+      const nameSpan = document.getElementById('name');
+      const emailSpan = document.getElementById('email');
+      const locationSpan = document.getElementById('location');
+      const aboutMeParagraph = document.getElementById('about-me');
+      const newNameInput = document.getElementById('new-name');
+      const newEmailInput = document.getElementById('new-email');
+      const newLocationInput = document.getElementById('new-location');
+      const newAboutMeTextarea = document.getElementById('new-about-me');
+      const newProfileImageInput = document.getElementById('new-profile-image');
+      const profileImage = document.getElementById('profile-image');
+      
+      // Edit button click handler
+      editProfileButton.addEventListener('click', () => {
+        editFormDiv.style.display = 'block';
+        editProfileButton.style.display = 'none';
+      
+        // Pre-fill input fields with current data
+        newNameInput.value = nameSpan.textContent;
+        newEmailInput.value = emailSpan.textContent;
+        newLocationInput.value = locationSpan.textContent;
+        newAboutMeTextarea.value = aboutMeParagraph.textContent;
+      });
+      
+      // Save changes button click handler
+      saveChangesButton.addEventListener('click', () => {
+        // Update the DOM with new data
+        nameSpan.textContent = newNameInput.value;
+        emailSpan.textContent = newEmailInput.value;
+        locationSpan.textContent = newLocationInput.value;
+        aboutMeParagraph.textContent = newAboutMeTextarea.value;
+      
+        // Update profile image (you may need to handle file uploads differently)
+        if (newProfileImageInput.files && newProfileImageInput.files[0]) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            profileImage.src = e.target.result;
+          };
+          reader.readAsDataURL(newProfileImageInput.files[0]);
+        }
+      
+        // Hide the edit form and display the edit profile button
+        editFormDiv.style.display = 'none';
+        editProfileButton.style.display = 'block';
+      });
+
+      const logoutButton = document.getElementById('logout');
+
+logoutButton.addEventListener('click', () => {
+    // Clear user session or authentication token here (e.g., by removing cookies or clearing local storage)
+    
+    // Redirect to the landing page
+    window.location.href = 'landing.html'; // Replace 'landing-page.html' with the actual URL of your landing page
+});
+
+      
+      </script>
+      </body>
+      </html>
+      

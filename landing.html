@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Ben 10 Fan Club</title>
+    <!-- Add Bootstrap CSS link -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Lato:wght@300&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lab.css">
+</head>
+<body>
+
+    <section class=" profile" id="form-page">
+    <div class="bg-success text-center ">
+        <h1>Sign up with us today.</h1>
+        <h1>Sign in if you already have an account.</h1>
+        <p class="lead">Create your profile and enjoy our quality services</p>
+    </div>
+    </section>
+
+    <section id="signin-signup" class="container mt-5">
+        <div class="text-center">
+            <button id="showSignUp" class="btn btn-success">Switch to Sign Up</button>
+            <button id="showSignIn" class="btn btn-info">Switch to Sign In</button>
+        </div>
+
+        <div class="container wrapper mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!-- Sign-In Form with Bootstrap Styling -->
+                    <form id="signInForm" class="bg-light p-4">
+                        <h2 class="mb-4">Sign In</h2>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username:</label>
+                            <input type="text" id="username" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <div class="input-group">
+                                <input type="password" id="password" class="form-control" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="togglePassword">
+                                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" id="signInButton" class="btn btn-success">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!-- Sign-Up Form -->
+                    <form id="signUpForm" class="bg-light p-4" style="display: none;">
+                        <h2 class="mb-4">Sign Up</h2>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <div class="input-group align-items-center"> <!-- Add align-items-center class -->
+                                <input type="password" id="signUpPassword" class="form-control" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="togglePassword">
+                                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <button type="button" id="signUpButton" class="btn btn-success">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 text-center">
+            <p>Or continue with:</p>
+            <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=YOUR_REDIRECT_URI&scope=openid%20email%20profile&client_id=YOUR_CLIENT_ID&prompt=select_account&access_type=offline" class="btn btn-light">
+                <img src="/images/google.jpg" width="200px" height="auto">
+            </a>
+        </div>
+    </section>
+
+    <!-- Add your footer here -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const signInForm = document.getElementById('signInForm');
+        const signUpForm = document.getElementById('signUpForm');
+        const showSignUpButton = document.getElementById('showSignUp');
+        const showSignInButton = document.getElementById('showSignIn');
+
+        showSignUpButton.addEventListener('click', () => {
+            signInForm.style.display = 'none';
+            signUpForm.style.display = 'block';
+        });
+
+        showSignInButton.addEventListener('click', () => {
+            signInForm.style.display = 'block';
+            signUpForm.style.display = 'none';
+        });
+
+        // JavaScript code to handle sign-in and redirection
+        document.getElementById('signInButton').addEventListener('click', function () {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Check if both fields are not empty
+            if (username.trim() !== '' && password.trim() !== '') {
+                // Redirect to the home page (replace with the actual URL)
+                window.location.href = 'home.html';
+            } else {
+                alert('Please fill in both username and password.');
+            }
+        });
+
+        // JavaScript code to handle sign-up and redirection
+        document.getElementById('signUpButton').addEventListener('click', function () {
+            const email = document.getElementById('email').value;
+            const signUpPassword = document.getElementById('signUpPassword').value;
+
+            // Check if both fields are not empty
+            if (email.trim() !== '' && signUpPassword.trim() !== '') {
+                // Redirect to the profile page (replace with the actual URL)
+                window.location.href = 'profile.html';
+            } else {
+                alert('Please fill in both email and password.');
+            }
+        });
+
+        // JavaScript code to toggle password visibility
+const passwordField = document.getElementById('password');
+const togglePasswordButton = document.getElementById('togglePassword');
+
+togglePasswordButton.addEventListener('click', function (yyyyyyyyy) {
+    if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        togglePasswordButton.innerHTML = '<i class="fa fa-eye" aria-hidden="true"></i>';
+    } else {
+        passwordField.type = 'password';
+        togglePasswordButton.innerHTML = '<i class="fa fa-eye-slash" aria-hidden="true"></i>';
+    }
+});
+
+
+        })
+
+    </script>
+</body>
+</html>

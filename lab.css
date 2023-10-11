@@ -1,0 +1,734 @@
+
+/*home page*/
+
+
+/* Make carousel images slightly blurry */
+.carousel-item img {
+    filter: blur(2px);
+}
+
+/* Style the overlay text */
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+#mission-values{
+    gap: 60px;
+    color: rgb(31, 63, 31);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    color: white;
+}
+.carousel-item img{
+    width: 100%;
+    max-height: 600px;
+    border-bottom-left-radius: 40px;
+}
+navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+.navbar a{
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    text-decoration: solid;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+#ben10-history{
+    margin-top: 30px;
+   
+    text-indent: 25px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.navbar-brand img{
+    width: 50px;
+    height: 50px;
+}
+
+#features{
+  /*  background-color: rgb(68, 139, 68);*/
+    font-size: xx-small;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.card{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    color: rgb(80, 148, 80);
+}
+.login-text{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    margin-left: 30%;
+    margin-right: 50%;
+    width: 50%;
+    padding-bottom: 10px;
+}
+.categories{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    color: rgb(31, 63, 31);
+    margin-bottom: 30px;
+    background-color: white;
+}
+.categories img{
+    width: 100%;
+    height: 200;
+}
+.categories h1{
+    color: rgb(8, 100, 8);
+}
+.history-flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*profile page*/
+.profile{
+    margin-top: 30px;
+    color: white;
+    box-shadow: 5px 5px 15px #00000066;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.profile a{
+    padding: 10px;
+    background-color: white;
+    color: rgb(80, 148, 80);
+    font-weight: bolder;
+    font-size: larger;
+    margin: 5px;
+    border-radius: 5px;
+}
+.profile a:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    text-decoration: overline;
+    background-color: rgb(80, 148, 80);
+    color: rgb(61, 54, 54);
+}
+.card-header{
+    background-color: rgb(68, 139, 68);
+    color: white;
+}
+
+/*landing page*/
+#signInForm{
+    background-image: url(/images/3.jpg);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    color: white;
+}
+#signInForm input{
+    background-color: rgb(68, 139, 68);
+    color: white;
+    padding: 10px;
+    border: 3px solid white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#signUpForm{
+    background: url(/images/5.jpg);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    border-radius: 5PX;
+    width: 95%;
+    color: #ffffff;
+    margin-top: -40px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    padding: 20px;
+}
+
+#signin-signup{
+padding-bottom: 40px;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+padding-top: 40px;
+}
+#form-page{
+    width: 70%;
+    height: auto;
+    margin-left: 20%;
+
+}
+
+/*newsletter styling*/
+#newsletter{
+    margin-top: 30px;
+    color: white;
+}
+#newsletter .container{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+
+/*testimonial section*/
+.testimonials{
+    background-color: rgb(61, 54, 54);
+    margin: 30px;
+    color: white;
+}
+.testimonials cite{
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+.testimonials img{
+    border-radius: 50%;
+}
+
+/* Custom CSS to style the input group */
+.input-group {
+    position: relative; /* Add relative positioning */
+}
+
+/* Style the icon container (span) */
+.input-group-text {
+    cursor: pointer; /* Add pointer cursor to indicate interactivity */
+    border-top-left-radius: 0; /* Remove rounded corners on the left side */
+    border-bottom-left-radius: 0;
+    height: 0%;
+    color:white ;
+    background-color: rgb(61, 54, 54);
+}
+/*latest news*/
+.card img{
+    filter: none;
+}
+.car-in{
+    color:rgb(31, 63, 31);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  padding: 20px;
+  background-color: rgb(24, 197, 24)
+}
+
+#news{
+    box-shadow: 5px 5px 15px rgba(6, 221, 9, 1);
+}
+.news-image{
+    background-color: rgb(61, 54, 54);
+    color: white;
+}
+
+
+
+/*footer*/
+#last-section{
+    background-color: rgb(60, 111, 60);
+    width: 100%;
+}
+.footer-links{
+    color: white;
+    list-style-type: none;
+}
+.footer-links a{
+    color: white;
+
+}
+.foot{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.social-links{
+    color: white;
+    list-style-type: none;
+}
+.social-links a{
+    color: white;
+    
+}
+
+/*fan community*/
+#fan-community a{
+    margin-bottom: 10px;
+}
+
+    /* CSS for hiding the Features Page initially */
+    .hidden {
+        display: none;
+    }
+
+    /* CSS for sliding down animation */
+    .slide-down {
+        animation-name: slide-down;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes slide-down {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
+    #revealFeatures img{
+        background-color: white;
+    }
+
+    #revealFeatures img:hover{
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+           width: 200px;
+           height: 200px;
+           border-radius: 50%;
+           max-height: 400px;
+    }
+    .featuring{
+        margin-top: 30px;
+    }
+
+
+/* fan community page*/
+
+#main-content img{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    padding: 20px;
+
+}
+
+#sidebar a{
+    color: white;
+    padding: 30px;
+    margin: 40px;
+    margin-bottom: 100px;
+    height: 100%;
+}
+#sidebar a:hover{
+    color: rgb(24, 197, 24);
+}
+#main-content section{
+background-color:rgb(24, 197, 24);
+margin-bottom: 30px;
+border-radius: 10px;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+list-style-position: inside;
+color: white;
+}
+.fanbody{
+    background-color:white;
+}
+        /* CSS for full-width fan art gallery */
+        #fan-art-gallery {
+            background-color: #f8f9fa; /* Add your desired background color */
+        }
+
+        #fan-art-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px; /* Add padding as needed */
+        }
+
+        .fan-art-card {
+            flex-basis: calc(33.33% - 20px); /* Adjust width as needed */
+            margin: 10px; }/* Add margin as needed */
+        
+
+            /*About page*/
+            .media{
+                margin: 10px;
+            }
+
+
+            /*fan art page*/
+            .fan-art{
+                background-image: url(/images/gilf2.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-weight: bolder;
+            }
+
+            #fan-art-grid img{
+                margin-top: 20px;
+            }
+            .upload label{
+                font-weight: bolder;
+                padding: 10px;
+                
+
+            }
+            .upload input{
+                background-color: rgb(24, 197, 24);
+                margin: 20px;
+                width: 50%;
+            }
+            .upload form{
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+                
+            }
+/*contact us page*/
+            #contact form{
+                background-color: rgb(61, 54, 54);
+                border-radius: 10px;
+                color: white;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            }
+            #contact{
+                background-image: url(/images/31.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white
+            }
+            #contact label{
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            #contact input{
+                margin: 20px;
+                border: 2px solid rgb(24, 197, 24);
+                width: 50%;
+            }
+
+            #contact button{
+                margin-bottom: 20px;
+                margin-left: 30px;
+            }
+        #contact textarea{
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 80%;
+            background-color: rgb(24, 197, 24);
+            color: white;
+        }
+
+        .game-header{
+            width: 100%;
+            height: 400px;
+            background-image: url(/images/gilf2.gif);
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-weight: bolder;
+            font-size: large;
+
+            }
+            .game-header:hover{
+                opacity: 0.7; /* Reduce opacity on hover to create a dimming effect */
+                transition: opacity 0.3s ease; /* Add a smooth transition effect */
+                height: 500px;
+            }
+        #games{
+            background-color: rgb(61, 54, 54);
+            color: white;
+        }
+        #games img:hover{
+            width: 130%;
+            height: auto;
+            transition: width 0.3s ease;
+        }
+
+        #leaderboard .card{
+            border: 3px solid rgb(24, 197, 24);
+        }
+        #leaderboardTable{
+            background-color: rgb(61, 54, 54);
+            color: white;
+            border: 2px solid rgb(24, 197, 24);
+        }
+        .update-container{
+            background-color: rgb(61, 54, 54);
+        }
+
+        #feedback button{
+            margin-left: 20px;
+        }
+        #feedback label{
+            padding: 20px;
+            margin: 10px;
+            color: white;
+        }
+        #feedback form{
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+            padding-bottom: 15px;
+        }
+        #feedback input{
+            color: rgb(31, 63, 31);
+            background-color: white;
+            width: 50%;
+            margin-left: 10px;
+        }
+        #feedback textarea{
+            width: 80%;
+            margin-left: 5px;
+        }
+
+        /*episode page*/
+        .story{
+            padding-top: 30px;
+            display: flex;
+        }
+        .story img{
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+            border-radius: 5px;
+            width: 50%;
+        }
+        .story img:hover{
+            width: 70%;
+            height: auto;
+            transition: width 0.5s ease;
+        }
+        .story.col-md-6{
+            margin-bottom: 30px;
+        }
+
+
+        
+
+.characters{
+    background-color:rgb(51, 49, 49); 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for character sections */
+.character-section {
+    background-color: rgb(51, 49, 49);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adds a slight elevation */
+    transition: transform 0.2s;
+}
+
+.character-section:hover {
+    transform: translateY(-5px); /* Move the section up on hover */
+}
+
+/* Style for character images */
+.character-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc; /* Add a border for contrast */
+    opacity: 0.8; /* Make the image slightly transparent */
+    transition: opacity 0.2s;
+}
+
+.character-section:hover .character-image {
+    opacity: 1; /* Restore full opacity on hover */
+}
+
+
+.alien-forms{
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.alien-text{
+    color: white;
+}
+
+.intro{
+    color: rgb(31, 63, 31);
+}
+.social-btn{
+    margin-bottom: 20px;
+}
+
+
+
+/*quiz*/
+.quiz{
+    background-image: url(images/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.btns p{
+    font-size: larger;
+    background-color:rgb(24, 197, 24);
+    color: white;
+    font-weight: bolder;
+    border-radius: 50%;
+    font-size: xx-large;
+    position: sticky;
+}
+
+.questions{
+    margin-bottom: 20px;
+}
+
+
+
+/*merch page*/
+
+#hero{
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#hero img{
+width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+    background-color: rgb(61, 54, 54);
+    color: white;
+}
+
+.cart-item img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+.item-details {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+#art{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    background-color: rgb(51, 49, 49);
+    color: white;
+}
+#item-section img{
+    border: 2px solid rgb(68, 139, 68);
+    transition: 0.3s;
+}
+#item-section img:hover{
+    transform: translateY(20px); /* Move the section up on hover */
+}
+#art button{
+    margin-bottom: 10px;
+}
+#products{
+    background-color: rgb(31, 63, 31);
+    color: white;
+}
+#cart-section{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+.total-price{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+
+.rate-review{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#review-form{
+    margin-top: 30px;
+    background-color: #ccc;
+    color:rgb(31, 63, 31);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#review-form input {
+    border: 2px solid rgb(51, 49, 49);
+    background-color: rgb(24, 197, 24);
+    color: white;
+    width: 50%;
+    margin-left: 60px;
+}
+
+.form-group textarea{
+    border: 2px solid rgb(51, 49, 49);
+    background-color: rgb(24, 197, 24);
+    color: white;
+    width: 70%;
+    margin-left:60px ;
+}
+
+#review-form button{
+    margin-bottom: 30px;
+    margin-left: 50%;
+}
+
+.form-group label{
+margin-top: 20px;
+margin-left: 50px;
+font-weight: bolder;
+}
+
+.col-head{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+/*styling the slideshow*/
+.merchandise-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 3px rgb(49, 54, 49); 
+    justify-content: space-between;
+}
+.carousel-item img{
+    height: auto;
+    width: 100%;
+
+    
+
+}
+.carousel-inner{
+    margin-top: 20px;
+}
+.rating span{
+    color: rgb(24, 197, 24);
+}
+
+/*foter*/
+#last-section{
+    margin-top: 40px;
+}
