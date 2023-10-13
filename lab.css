@@ -28,14 +28,14 @@
 .carousel-item img{
     width: 100%;
     max-height: 600px;
-    border-bottom-left-radius: 40px;
 }
+/*
 .navbar{
     position: sticky;
     top: 0;
     left: 0;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-}
+}*/
 .navbar a{
     color: white;
     padding: 10px;
@@ -44,6 +44,8 @@
 }
 .navbar a:hover{
     text-decoration: underline;
+    color: rgb(24, 197, 24);
+    background-color: white;
 }
 
 #ben10-history{
@@ -61,7 +63,7 @@
 #features{
   /*  background-color: rgb(68, 139, 68);*/
     font-size: xx-small;
-    border-radius: 10px;
+    border-radius:10px;
     margin-left: 10px;
     margin-right: 10px;
     color: white;
@@ -651,7 +653,7 @@ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     margin-right: 50px;
 }
 #art button{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 #products{
     background-color: rgb(31, 63, 31);
