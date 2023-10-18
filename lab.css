@@ -4,7 +4,7 @@
 
 /* Make carousel images slightly blurry */
 .carousel-item img {
-    filter: blur(2px);
+    opacity: 0.8;
 }
 
 /* Style the overlay text */
@@ -12,12 +12,6 @@
     font-size: 3rem;
     font-weight: bold;
     color: white;
-}
-
-#mission-values{
-    gap: 60px;
-    color: rgb(31, 63, 31);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
 }
 
 
@@ -29,13 +23,6 @@
     width: 100%;
     max-height: 600px;
 }
-/*
-.navbar{
-    position: sticky;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-}*/
 .navbar a{
     color: white;
     padding: 10px;
@@ -48,16 +35,64 @@
     background-color: white;
 }
 
-#ben10-history{
-    margin-top: 30px;
-   
-    text-indent: 25px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-}
 
 .navbar-brand img{
     width: 50px;
     height: 50px;
+}
+
+#ben10-history{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    font-size: larger;
+    color: rgb(31, 63, 31);
+    position: relative;
+    text-indent: 20px;
+    margin-bottom: 30px;
+}
+
+.image-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+.scrolling-image {
+    width: 100%;
+    animation: scrollImages 12s linear infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add elevation shadow */
+    border-radius: 15px; /* Round the corners */
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.image-container {
+    text-align: center;
+    padding: 20px;
+    height: fit-content;
+    width: 50%;
+}
+.image-container img{
+    filter: none;
+    width: 30%;
+    height: auto;
+    opacity: 1;
 }
 
 #features{
@@ -66,31 +101,11 @@
     border-radius:10px;
     margin-left: 10px;
     margin-right: 10px;
-    color: white;
+    color: black;
 }
 .card{
     box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-    color: rgb(80, 148, 80);
-}
-.login-text{
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-    margin-left: 30%;
-    margin-right: 50%;
-    width: 50%;
-    padding-bottom: 10px;
-}
-.categories{
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-    color: rgb(31, 63, 31);
-    margin-bottom: 30px;
-    background-color: white;
-}
-.categories img{
-    width: 100%;
-    height: 200;
-}
-.categories h1{
-    color: rgb(8, 100, 8);
+    color: #509450;
 }
 .history-flex{
     justify-content: space-between;
@@ -171,21 +186,11 @@ padding-top: 40px;
 }
 
 /*newsletter styling*/
-#newsletter{
-    margin-top: 30px;
-    color: white;
+.newsletter{
+    margin-bottom: -40px;
 }
-#newsletter .container{
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-}
-
 
 /*testimonial section*/
-.testimonials{
-    background-color: rgb(61, 54, 54);
-    margin: 30px;
-    color: white;
-}
 .testimonials cite{
     color: white;
     font-weight: bolder;
@@ -193,6 +198,15 @@ padding-top: 40px;
 }
 .testimonials img{
     border-radius: 50%;
+}
+.testimonials{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.testimonial{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    color: white;
+    padding: 20px;
 }
 
 /* Custom CSS to style the input group */
@@ -209,26 +223,98 @@ padding-top: 40px;
     color:white ;
     background-color: rgb(61, 54, 54);
 }
+
+.login-text{
+    margin-bottom: 30px;
+}
+  
+.value{
+    margin-bottom: 50px;
+}
+.value h1 {
+    position: relative;
+    font-size: 2em;
+    color: green;
+}
+
+.value h1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 2px;
+    background-color: green;
+}
+
+
+.value  h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 2px;
+    background-color: green;
+}
+
+.value h1::before {
+    left: 0;
+}
+
+.value  h1::after {
+    right: 0;
+}
+
 /*latest news*/
 .card img{
     filter: none;
 }
-.car-in{
-    color:rgb(31, 63, 31);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-  padding: 20px;
-  background-color: rgb(24, 197, 24)
-}
-
-#news{
-    box-shadow: 5px 5px 15px rgba(6, 221, 9, 1);
-}
 .news-image{
-    background-color: rgb(61, 54, 54);
+    background-color: rgb(51, 49, 49);
     color: white;
 }
+.toys-news p{
+margin: 20px;
+font-weight: bolder;
+}
 
 
+#news  h2 {
+    position: relative;
+    font-size: 2em;
+    color: green;
+}
+
+#news h2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 2px;
+    background-color: green;
+}
+
+
+#news  h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 2px;
+    background-color: green;
+}
+
+
+#news h2::before {
+    left: 0;
+}
+
+#news  h2::after {
+    right: 0;
+}
+
+.upcoming-toys p{
+    padding: 30px;
+}
 
 /*footer*/
 #last-section{
@@ -382,24 +468,26 @@ color: white;
             }
 /*contact us page*/
             #contact form{
-                background-color: rgb(61, 54, 54);
+            
                 border-radius: 10px;
-                color: white;
+                color: rgb(61, 54, 54);
                 box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+                background-image: url(././images/ben.webp);
             }
-            #contact{
-                background-image: url(./././images/31.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                color: white
+            #contact h2{
+                margin-bottom: 30px;
             }
             #contact label{
                 margin-left: 10px;
                 margin-top: 10px;
+                font-weight: bolder;
+                font-size: larger;
+                color: rgb(31, 63, 31);
+
             }
             #contact input{
                 margin: 20px;
-                border: 2px solid rgb(24, 197, 24);
+            
                 width: 50%;
             }
 
@@ -619,7 +707,16 @@ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     height: auto;
     
 }
+/* Style for the liked state */
+.like-button.liked {
+    background-color: #ff1493; /* Change to your preferred color */
+    color: white;
+    border-color: #ff1493; /* Change to match the background color */
+}
 
+.fa-heart.liked{
+    background-color: #ff1493;
+}
 
 .item-details {
     display: inline-block;

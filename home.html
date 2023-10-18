@@ -14,11 +14,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Lato:wght@300&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="lab.css">
 <style>
-    .bg-body{
+   /* .bg-body{
         background-image: url(./././images/bg1.jfif);
         background-repeat: no-repeat;
         color: white;
         background-size: cover;
+    }*/
+    .bg-body{
+        color: black;
     }
 </style>
 </head>
@@ -43,7 +46,7 @@
                             <a class="nav-link" href="games.html">Games</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact us</a>
+                            <a class="nav-link" href="contact.html">Contact us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="profile.html">Profile</a>
@@ -122,77 +125,52 @@
             </div>
         </div>
     </header>
-    <div class="container login-text text-center mt-5 bg-dark">
-        <h1>Welcome to your franchise</h1>
-        <p>Explore the amazing world of Ben 10!</p>
-        <a href="landing.html" class="btn btn-success btn-lg">Get started</a>
+    <div class="container login-text text-center mt-5 ">
+        <a href="landing.html" class="btn btn-outline-success btn-lg">Get started</a>
     </div>
 
-
-<!-- Mission and Values Section -->
-<section id="mission-values" class="py-5 text-white">
-    <div class="container">
-        <div class="row miss-val ">
-            <div class="col-lg-6 mission ">
-                <h3>Our Mission</h3>
-                <p>
-                    At Ben 10, our mission is clear and unwavering:
-                     to inspire imagination, empower heroism, and ignite 
-                     the spark of curiosity in the hearts of every child. We believe in the
-                      power of storytelling, adventure,
-                      and the boundless potential that   resides within each young mind.
-Through the remarkable adventures of Ben Tennyson and his
-extraterrestrial allies, we aim to transport our audience to exciting worlds 
-filled with limitless possibilities. Our mission is to encourage children to embrace 
-their unique abilities and cultivate the qualities that make them extraordinary.                                                                            
-
-                </p>
-            </div>
-            <div class="col-lg-6 " >
-                <h3>Our Values</h3>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i>Inclusivity
-                    </li>
-                    <li><i class="fas fa-check-circle"></i> Quality
-
-                    </li>
-                    <li><i class="fas fa-check-circle"></i>Creativity</li>
-                    <li><i class="fas fa-check-circle"></i>Fun</li>
-                    <li><i class="fas fa-check-circle"></i>Teamwork</li>
-                    <li><i class="fas fa-check-circle"></i>Continuous learning</li>
-                    <li><i class="fas fa-check-circle"></i>Courage</li>
-                </ul>
-                <a href="about.html" class="col-md-8"> <button class="btn btn-dark text-center">..Read more about us</button>
-                </a>   
-            </div>
-        </div>
-    </div>
-</section>
 
 
     <section id="ben10-history" class="container">
-        <div class="row history-flex bg-dark ">
+        <div class="row history-flex  ">
             <div class="col-md-4">
-                <img src="./images/history.jpg" alt="Ben 10" class="img-fluid rounded">
+                <img src="./././images/omnitrix.jfif" id="omnitrix"  class="img-fluid rounded">
             </div>
             <div class="col-md-7 ">
-                <h2 class="mb-4">History of Ben 10</h2>
-                <p>Ben Tennyson discovers the Omnitrix, a mysterious alien device with the
-                     power to transform the wearer into ten different alien species. With
-                      his new powers, Ben faces the responsibilities of being a hero
-                       as he battles
-                     supernatural and alien enemies.</p>
-                     <p>Ben 10 was created by Man of Action Studios
-                         for Cartoon Network. </p>
-                         <p>At 13 years it is Cartoon Network's longest running
-                             franchise to date and is aired around the world.</p>
+                <h1 class="bg-success text-white">Welcome to Ben 10 Universe</h1>
+                     <p> Explore the world of Ben 10, an incredible journey of a young hero with amazing powers.
+                         Join the adventure and discover the secrets hidden within the Omnitrix.</p>
+                    
             </div>
         </div>
     </section>
 
+
+    <div class="container text-center value mt-5">
+        <h1>OUR CORE VALUES</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./././images/inclu.png" alt="Inclusivity Icon" class="img-fluid">
+                <h2>Inclusivity</h2>
+            </div>
+            <div class="col-md-3">
+                <img src="./././images/creativity.png" alt="Creativity Icon" class="img-fluid">
+                <h2>Creativity</h2>
+            </div>
+            <div class="col-md-3">
+                <img src="././images/quality.png" alt="Quality Icon" class="img-fluid">
+                <h2>Quality</h2>
+            </div>
+            <div class="col-md-3">
+                <img src="./././images/fun.png" alt="Fun Icon" class="img-fluid">
+                <h2>Fun</h2>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container featuring d-flex justify-content-center align-items-center vh-40">
         <div class="text-center">
-            <h2>Click on the button below to display our featured categories</h2>
             <button id="revealFeatures" class="btn btn-success">Explore our features
             </button>
         </div>
@@ -210,105 +188,166 @@ their unique abilities and cultivate the qualities that make them extraordinary.
             </div>
             <div class="row">
                 <div class="col-md-4 mb-4">
+                    <a href="games.html">
                     <div class="card bg-dark text-white">
                         <img src="./images/bengame.jfif" class="card-img-top" alt="Feature 1">
                         <div class="card-body">
                             <h1 class="card-title">Games</h1>
                         </div>
                     </div>
+                    </a>
                 </div>
+        
+
                 <div class="col-md-4 mb-4">
+                    <a href="fan-community.html">
                     <div class="card bg-dark text-white">
                         <img src="./images/com.jfif" class="card-img-top" alt="Feature 2">
                         <div class="card-body">
                             <h1 class="card-title">Fan community</h1>
                         </div>
                     </div>
+                    </a>
                 </div>
+
                 <div class="col-md-4 mb-4">
+                    <a href="episodes.html">
                     <div class="card bg-dark text-white">
                         <img src="./images/characters.jpg" class="card-img-top" alt="Feature 3">
                         <div class="card-body">
-                            <h1 class="card-title">Characters</h1>
+                            <h1 class="card-title">Episodes/stories</h1>
                         </div>
                     </div>
+                    </a>
                 </div>
+
                 <div class="col-md-4 mb-4">
+                    <a href="quiz.html">
                     <div class="card bg-dark text-white">
                         <img src="./images/quiz.avif" class="card-img-top" alt="Feature 4">
                         <div class="card-body">
                             <h1 class="card-title">quiz</h1>
                         </div>
                     </div>
+                    </a>
                 </div>
+
                 <div class="col-md-4 mb-4">
+                    <a href="merchandise.html">
                     <div class="card bg-dark text-white">
                         <img src="./images/14.jpg" class="card-img-top" alt="Feature 5">
                         <div class="card-body">
                             <h1 class="card-title">Merchandise</h1>
                         </div>
                     </div>
+                    </a>
                 </div>
+
                 <div class="col-md-4 mb-4">
+                    <a href="fan-art.html">
                     <div class="card bg-dark text-white">
                         <img src="./images/art.jpg" class="card-img-top" alt="Feature 6">
                         <div class="card-body">
                             <h1 class="card-title">Fan arts</h1>
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     
 
-    
-<!-- Centered Paragraph -->
-<div class="container text-center mt-5">
-    <h4>Here is a tease of what to expect from our categories</h4>
+    <div class="container ">,
+        <div id="imageCarousel" class="carousel slide mt-4" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="image-container">
+                        <img src="././images/merch.jfif" class="d-block mx-auto" alt="Image 1">
+                        <div class="centered-text">
+                            <h3 class="bg-success text-white">Merch store</h3>
+                            <p>    "Discover a treasure trove of Ben 10 merchandise that allows 
+                                you to carry the magic of Ben Tennyson and his alien heroes
+                                 with you wherever you go. Collect it, wear it, and live the adventure!"
+                                "Elevate your style and show off your love for Ben 10 with our
+                                 exclusive merchandise. From clothing to collectibles, our store 
+                                 is a dream come true for fans."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="./././images/game6.jpg" class="d-block mx-auto" alt="Image 2">
+                        <div class="centered-text">
+                            <h3 class="bg-success text-white">Games</h3>
+                            <p>    "Embark on epic adventures and unleash the power of the Omnitrix in our immersive Ben 10 games. Unleash
+                                 your inner hero and save the day!"
+                                "Experience the thrill of transforming into your
+                                 favorite aliens, battling villains, and solving puzzles
+                                  in our action-packed Ben 10 games."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="images/com.jfif" class="d-block mx-auto" alt="Image 3">
+                        <div class="centered-text">
+                            <h3 class="bg-success text-white">Fan Community</h3>
+                            <p>
+                                "Our Fan Community is a gathering of devoted Ben 10 enthusiasts from around the world. Join us to share your love for Ben
+                                 10, discuss your favorite episodes, and forge lifelong friendships."
+                                "Connect with like-minded fans who share your passion for the Ben
+                                 10 universe. It's a place where friendships are formed and memories are created."
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-<!-- Games Section -->
-<div class="container categories mt-4">
-    <div class="row ">
-        <div class="col-md-6">
-            <h1>Games</h1>
-            <img  src="./images/gilf2.gif" alt="Games" class="img-fluid">
-            <p>We have exciting game collections your way,your kids will absolutely love it.
-                Compete against the very best in the world in our online game challenge .
-            </p>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="images/merchart2.jpg" class="d-block mx-auto" alt="Image 3">
+                        <div class="centered-text">
+                            <h3 class="bg-success text-white">Fan art</h3>
+                            <p>
+                                "Unleash your creativity and become an artist in the Ben 10 universe
+                                . Share your imaginative and captivating fan art with the community and stand a chance to shine as a true Ben 10 artist."
+                                "Transform your love for Ben 10 into captivating works of art. Express your unique vision and make your mark
+                                 in our fan art gallery."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more carousel items with images and text as needed -->
+            </div>
         </div>
-        
-        <!-- Characters Section -->
-        <div class="col-md-6">
-            <h1>Fan art</h1>
-            <img src="./images/artwork.jfif" alt="Characters" class="img-fluid">
-            <p>Great opportunity awaits you.Showcase your skills by
-                 creating and uploading your customised Ben 10 art and stand a chance to win a prize
-                </p>
-        </div>
-
-        <!--fan art section-->
-        <div class="col-md-6">
-            <h1>Characters</h1>
-            <img src="./images/gwen.jpg" alt="Characters" class="img-fluid">
-            <p>You can't be a fan when you don't know some of the main characters.Know your favourite characters and tell 
-                us why you love them more.
-            </p>
-        </div>
-
-        <div class="col-md-6">
-            <h1>Merch store</h1>
-            <img  src="./images/23.jpg"  class="img-fluid">
-            <p>Shop from our merch store.New products are updated daily,also get
-                customisable merch at discounted prices.
-                </p>
-        </div>
-
-
     </div>
-</div>
 
 
+
+    <div class="container text-center value mt-5">
+        <h2>Our statistics speaks...</h2>
+        <h3>Trusted by millions of fans across the world.</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <h1>$8.3M+</h1>
+                <p class="bg-success text-white">Sales</p>
+            </div>
+            <div class="col-md-3">
+                <h1>200+</h1>
+                <p class="bg-success text-white">Employees</p>
+            </div>
+            <div class="col-md-3">
+                <h1>$5.2M</h1>
+                <p class="bg-success text-white">Investor</p>
+            </div>
+            <div class="col-md-3">
+                <h1>$4.B+</h1>
+                <p class="bg-success text-white">Revenue</p>
+            </div>
+        </div>
+    </div>
+
+    
 <!-- Additional Content Section: Testimonials -->
 <section class="testimonials">
     <div class="container fanside">
@@ -317,22 +356,22 @@ their unique abilities and cultivate the qualities that make them extraordinary.
                 <h2>What Our Fans Say</h2>
             </div>
             <div class="col-md-4">
-                <div class="testimonial">
-                    <img src="./images/3.jpg" width="50px" height="auto" >
-                    <p>"I love Ben 10! The games are amazing!"</p>
+                <div class="testimonial bg-success">
+                    <img src="././images/3.jpg" width="50px" height="auto" >
+                    <p>"I love Ben 10! The games are amazing!".Amazing work!</p>
                     <cite>- Jerry</cite>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="testimonial">
-                    <img src="./images/5.jpg" width="50px" height="auto" >
+                <div class="testimonial bg-success">
+                    <img src="././images/12.jpg" width="50px" height="auto" >
                     <p>"This franchise never disappoints. Can't wait for the next episode!"</p>
                     <cite>- Victor</cite>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="testimonial">
-                    <img src="./images/49.jpg" width="50px" height="auto" >
+                <div class="testimonial bg-success">
+                    <img src="././images/merchart2.jfif" width="50px" height="auto" >
                     <p>"The merchandise collections are fantastic. I'm a huge fan!"</p>
                     <cite>-  Ndifreke</cite>
                 </div>
@@ -352,7 +391,7 @@ their unique abilities and cultivate the qualities that make them extraordinary.
                         <!-- News items will go here -->
                         <div class="carousel-item active">
                             <div class="card news-image">
-                                <img src="./images/bengame.jfif" class="card-img-top" alt="News 1">
+                                <img src="././images/bengame.jfif" class="card-img-top" alt="News 1">
                                 <div class="card-body">
                                     <h5 class="card-title">Exciting New Game</h5>
                                     <p class="card-text">Discover our latest game release, filled with action and adventure!</p>
@@ -361,7 +400,7 @@ their unique abilities and cultivate the qualities that make them extraordinary.
                         </div>
                         <div class="carousel-item">
                             <div class="card news-image">
-                                <img src="./images/merch.jfif" class="card-img-top" alt="News 2">
+                                <img src="././images/merch.jfif" class="card-img-top" alt="News 2">
                                 <div class="card-body">
                                     <h5 class="card-title">New Clothing Line</h5>
                                     <p class="card-text">Get ready to upgrade your style with our trendy new clothing collection.</p>
@@ -370,7 +409,7 @@ their unique abilities and cultivate the qualities that make them extraordinary.
                         </div>
                         <div class="carousel-item">
                             <div class="card news-image">
-                                <img src="./images/coming.jpg" class="card-img-top" alt="News 3">
+                                <img src="././images/coming.jpg" class="card-img-top" alt="News 3">
                                 <div class="card-body">
                                     <h5 class="card-title">Coming Soon!</h5>
                                     <p class="card-text">Stay tuned for a big surprise that our fans won't want to miss!</p>
@@ -393,65 +432,28 @@ their unique abilities and cultivate the qualities that make them extraordinary.
     </div>
 </section>
 
+<div class="container upcoming-toys mt-5  value">
+    <!-- Paragraph about the Christmas toys collection -->
+    <h1 class="text-center" >Coming soon...</h1>
+    <p class="text-center bg-success toys-news text-white col-md-12">Get ready to unwrap
+         the magic of the holiday season with our exclusive Ben 10 toy
+          collection! This Christmas, we're bringing you a special selection
+           of action figures, playsets, and more. Whether you're a fan or you're
+            shopping for one, our toys will make this festive season truly 
+            extraordinary. Stay tuned for the big reveal!</p>
+
+    <!-- Image container with Bootstrap classes -->
+    <div class="image-carousel mx-auto mt-4">
+        <img src="./././images/30.png" class="img-fluid scrolling-image" alt="Christmas Toy Collection" id="toy-image">
+        <img src="./././images/29.png" class="img-fluid scrolling-image" alt="Christmas Toy Collection" id="toy-image">
+        <img src="./././images/28.PNG" class="img-fluid scrolling-image" alt="Christmas Toy Collection" id="toy-image">
+        <img src="./././images/toy4-removebg-preview.png" class="img-fluid scrolling-image" alt="Christmas Toy Collection" id="toy-image">
+        <img src="./././images/toy5.png" class="img-fluid scrolling-image" alt="Christmas Toy Collection" id="toy-image">
 
 
-    <!-- Featured Fan Art -->
-    <section id="featured-fan-art" class=" text-white py-5">
-        <div class="container">
-            <h2 class="text-center">Featured Fan Art</h2>
-            <div class="row">
-                <!-- Example featured fan art pieces (replace with actual artwork) -->
-                <div class="col-md-4">
-                    <div class="card mb-4 bg-dark text-white">
-                        <img src="./images/15.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Jane's art</h5>
-                            <p class="card-text">Artist: Jane Denis</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 bg-dark text-white">
-                        <img src="./images/Ben_10_logo.svg.png" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Josh's art</h5>
-                            <p class="card-text">Artist: Josh Smith</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 bg-dark text-white">
-                        <img src="./././images/art.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">dave's art</h5>
-                            <p class="card-text">Artist: David Johnson</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Newsletter Section -->
-<section id="newsletter" class=" py-5">
-    <div class="container bg-success">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Subscribe to Our Newsletter</h2>
-                <p>Stay in the loop with our latest news, promotions, and exclusive offers. Join our newsletter community today!</p>
-            </div>
-            <div class="col-md-6">
-                <div class="input-group">
-                    <input type="email" class="form-control" id="emailInput" placeholder="Enter your email address" aria-label="Email Address" aria-describedby="subscribeBtn">
-                    <div class="input-group-append">
-                        <button class="btn btn-dark" type="button" id="subscribeBtn">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="alertContainer"></div> <!-- Container for displaying alerts -->
     </div>
-</section>
+</div>
+
 
 <!-- Centered Join Our Fan Community Section -->
 <section id="fan-community" class=" text-white py-5">
@@ -477,6 +479,37 @@ their unique abilities and cultivate the qualities that make them extraordinary.
     </div>
 </section>
 
+<section class="newsletter bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center text-white mt-5">Subscribe to Our Newsletter</h2>
+                <p class="text-center text-white">Stay in the loop with our latest news, promotions, and exclusive offers. Join our newsletter community today!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group mb-3">
+                    <input type="email" id="emailInput" class="form-control" placeholder="Enter your email address" aria-label="Email Address" aria-describedby="subscribeBtn">
+                    <div class="input-group-append">
+                        <button id="subscribeBtn" class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="successModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <h5 class="modal-title" id="successModalLabel">Subscription Successful!</h5>
+                <p>You will now receive our latest updates.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 <section id="last-section">
@@ -516,57 +549,13 @@ their unique abilities and cultivate the qualities that make them extraordinary.
 <p class="text-white text-center">site created by George Clinton</p>
 </section>
     
-    
 
 <script>
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get references to the form elements
-    const emailInput = document.getElementById("emailInput");
-    const subscribeBtn = document.getElementById("subscribeBtn");
-
-    // Subscribe button click event handler
-    subscribeBtn.addEventListener("click", function () {
-        const email = emailInput.value.trim();
-
-        // Check if the email input is not empty
-        if (email !== "") {
-            // Customize your alert content
-            const alertContent = `Thank you for subscribing to our newsletter! You will now receive our latest updates at ${email}.`;
-
-            // Show a Bootstrap alert with customized content
-            showAlert("Success!", alertContent, "btn-success");
-            
-            // Optionally, you can clear the input field
-            emailInput.value = "";
-        } else {
-            // If the email input is empty, provide a different message
-            showAlert("Error", "Please enter a valid email address to subscribe.", "btn-danger");
-        }
-    });
-
-    // Function to display a Bootstrap alert
-    function showAlert(title, message, alertClass) {
-        const alertBox = document.createElement("div");
-        alertBox.className = `alert alert-dismissible ${alertClass} fade show`;
-        alertBox.innerHTML = `
-            <strong>${title}</strong> ${message}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        `;
-
-        // Append the alert to a container (e.g., a div with ID "alertContainer")
-        const alertContainer = document.getElementById("alertContainer");
-        alertContainer.innerHTML = ""; // Clear previous alerts
-        alertContainer.appendChild(alertBox);
-
-        // Automatically dismiss the alert after 5 seconds (5000 milliseconds)
-        setTimeout(() => {
-            alertBox.classList.remove("show");
-        }, 5000);
-    }
+   
+     
 
     const revealFeaturesButton = document.getElementById("revealFeatures");
         const featuresSection = document.getElementById("features");
@@ -583,8 +572,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 
-});
 
+
+        const omnitrix = document.getElementById("omnitrix");
+    const images = ["./././images/omnitrix.jfif", "./././images/333.jpg", "./././images/555.png", "./././images/2828.jpg"];
+    let currentImage = 0;
+
+    omnitrix.addEventListener("mouseover", function () {
+        currentImage = (currentImage + 1) % images.length;
+        omnitrix.src = images[currentImage];
+    
+    });
+      
+
+   const emailInput = document.getElementById("emailInput");
+        const subscribeBtn = document.getElementById("subscribeBtn");
+
+        subscribeBtn.addEventListener("click", function () {
+            const email = emailInput.value.trim();
+
+            if (email !== "") {
+                // Show the success modal
+                $('#successModal').modal('show');
+                
+                // Optionally, you can clear the input field
+                emailInput.value = "";
+            }
+        });
+
+
+
+    })
 
 </script>
 </body>
