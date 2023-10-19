@@ -364,6 +364,11 @@ font-weight: bolder;
         animation-timing-function: ease-in-out;
     }
 
+
+    #exclusive-episodes h1{
+        color: #28a745;
+    }
+
     @keyframes slide-down {
         0% {
             transform: translateY(-100%);
